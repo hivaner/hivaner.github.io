@@ -4,7 +4,15 @@
 
     </head>
     <body>
-            <script src="recommend_tour.js"></script>    
-    
+        <script src="common.js"></script>    
+        <input id="input" placeholder="输入问题">
+        <button onclick="aaa()">ok</button>
+        <div id="answer" ></div>
     </body>
+    <script>
+        function aaa(){
+            let q = document.querySelector('#input').value
+            document.querySelector('#answer').textContent = robot(q)
+        }
+    </script>
 </html>
